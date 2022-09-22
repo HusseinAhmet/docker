@@ -1,4 +1,4 @@
 #! /bin/bash
-apt update -y
+apt update 
 apt upgrade -y
-pip install flask
+pip install flask 
