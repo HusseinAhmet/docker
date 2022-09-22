@@ -6,8 +6,9 @@ SHELL ["/bin/bash","-c"]
 WORKDIR /app
 
 COPY . /app/
+ 
 
-RUN ["bash","requirments.sh"]
+RUN ["pip","install","flask"]
 
 EXPOSE 5000
 
