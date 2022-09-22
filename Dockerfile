@@ -7,7 +7,7 @@ WORKDIR /app
 
 COPY . /app/
 
-RUN ["requirments.sh","bash"]
+RUN ["./requirments.sh","bash"]
 
 EXPOSE 5000
 
