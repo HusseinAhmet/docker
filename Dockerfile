@@ -1,10 +1,13 @@
 FROM python:latest
 
+SHELL ["/bin/bash","-c"]		
+
+
 WORKDIR /app
 
 COPY . /app/
 
-RUN ["requirments.sh","-c"]
+RUN ["requirments.sh","bash"]
 
 EXPOSE 5000
 
