@@ -12,9 +12,4 @@ def hello_world():
 def kaw():
     return "<p>eh ya kemo!</p>"
 
-
-
-
-if __name__ == '__main__':
-
- app.run()
+app.run()
