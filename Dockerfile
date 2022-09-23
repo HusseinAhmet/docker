@@ -12,5 +12,5 @@ RUN ["pip","install","flask"]
 
 EXPOSE 5000
 
-CMD [ "python","app.py" ]
- 
+ENTRYPOINT [   "/bin/bash",   "-c","FLASK_APP=/app/app.py flask run --host=0.0.0.0"]
+            
