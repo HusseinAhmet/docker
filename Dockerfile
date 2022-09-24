@@ -2,7 +2,7 @@
 FROM python:3.11-rc-alpine AS build
 
 
-SHELL ["/bin/sh","-c"]		
+SHELL ["/bin/bash","-c"]		
 
 
 WORKDIR /app
@@ -13,7 +13,9 @@ RUN ["pip","install","flask"]
 
 EXPOSE 5000
 
-RUN groupadd  pythonapp && useradd -g pythonapp 7sen
+RUN ["/bin/bash", "-c", "groupadd","pythonapp"]
+RUN ["/bin/bash", "-c", "useradd","-g","pythonapp","7sen"]
+
 
 
 RUN chown -R  7sen:pythonapp /app
