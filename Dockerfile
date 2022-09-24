@@ -13,7 +13,7 @@ RUN ["pip","install","flask"]
 
 EXPOSE 5000
 
-RUN groupdadd  pythonapp && useradd -g pythonapp 7sen
+RUN groupadd  pythonapp && useradd -g pythonapp 7sen
 
 
 RUN chown -R  7sen:pythonapp /app
