@@ -2,7 +2,7 @@
 FROM python:3.11-rc-alpine AS build
 
 
-SHELL ["/bin/bash","-c"]		
+SHELL ["/bin/sh","-c"]		
 
 
 WORKDIR /app
